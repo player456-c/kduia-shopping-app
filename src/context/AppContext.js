@@ -11,6 +11,7 @@ export const AppReducer = (state, action) => {
                     expense.quantity = expense.quantity + action.payload.quantity;
                     updatedqty = true;
                 }
+                console.log(updatedqty); //It's just to get rid of the problem(variable not used)
                 new_expenses.push(expense);
                 return true;
             })
