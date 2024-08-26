@@ -7,10 +7,19 @@ import ItemSelected from './components/ItemSelected';
 import Location from './components/Location';
 
 function App() {
-  return (
-    <div className="App">
-    </div>
-  );
+    return (
+        <AppProvider>
+            <h1 className='mt-3'>Shopping App</h1>
+            <div className='row mt-3'> 
+                <div className='col-sm'>
+                    <CartValue />
+                </div>
+                <div className='col-sm'>
+                    <Location />
+                </div>
+            </div>
+        </AppProvider>
+    );
 }
 
 export default App;
